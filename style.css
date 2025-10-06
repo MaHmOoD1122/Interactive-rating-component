@@ -71,11 +71,12 @@ body {
   cursor: pointer;
   transition: all 0.4s;
 }
-.scale:hover {
-  background-color: hsl(25, 97%, 53%);
-}
+
 .scale:active {
   transform: translateY(4px);
+}
+.scale:active {
+  background-color: white;
 }
 .active-box {
   background-color: white;
@@ -170,7 +171,7 @@ body {
 }
 .hidden {
   opacity: 0;
-   width: none;
+  width: none;
   z-index: -1;
   transition: all 0.5s;
 }
@@ -195,5 +196,15 @@ body {
   .result-box {
     width: 31rem;
     height: 33rem;
+  }
+}
+@media (hover: hover) {
+  .scale:hover {
+    background-color: hsl(25, 97%, 53%);
+  }
+}
+@media (hover: none) {
+  .scale:hover {
+    background-color: initial;
   }
 }

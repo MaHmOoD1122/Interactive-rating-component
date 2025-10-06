@@ -205,6 +205,6 @@ body {
 }
 @media (hover: none) {
   .scale:hover {
-    background-color: initial;
+    background-color: white;
   }
 }
